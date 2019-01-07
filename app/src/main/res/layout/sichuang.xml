@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    >
+    <TextView android:id="@+id/spinnerText01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选择学校名称"
+        android:textSize="18sp">
+    </TextView>
+
+    <Spinner android:id="@+id/Spinner01"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:entries="@array/school"
+        android:spinnerMode="dialog"
+        ></Spinner>
+
+    <TextView android:id="@+id/spinnerText02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="请选择类别"
+        android:textSize="18sp"></TextView>
+
+    <Spinner android:id="@+id/Spinner02"
+        android:layout_width="100dp"
+        android:layout_height="64dp"
+        android:entries="@array/type"
+        android:spinnerMode="dialog"
+        ></Spinner>
+
+    <TextView android:id="@+id/spinnerText03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="请选择年份"
+        android:textSize="18sp"></TextView>
+
+    <Spinner android:id="@+id/Spinner03"
+        android:layout_width="100dp"
+        android:layout_height="64dp"
+        android:entries="@array/year"
+        android:spinnerMode="dialog"
+        ></Spinner>
+
+    <Button
+        android:id="@+id/button_sichuang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="查询"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:onClick="chaxun"/>
+
+</LinearLayout>

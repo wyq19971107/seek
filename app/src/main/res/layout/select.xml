@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    >
+    <TextView android:id="@+id/Text_select_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="输入学校名称"
+        android:textSize="18sp">
+    </TextView>
+
+    <EditText
+        android:id="@+id/editText_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView android:id="@+id/spinnerText_select_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="请选择地区"
+        android:textSize="18sp"></TextView>
+
+    <Spinner android:id="@+id/Spinner_select_01"
+        android:layout_width="100dp"
+        android:layout_height="64dp"
+        android:entries="@array/place"
+        android:spinnerMode="dialog"
+        ></Spinner>
+    <TextView android:id="@+id/spinnerText_select_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="请选择类别"
+        android:textSize="18sp"></TextView>
+
+    <Spinner android:id="@+id/Spinner_select_02"
+        android:layout_width="100dp"
+        android:layout_height="64dp"
+        android:entries="@array/type"
+        android:spinnerMode="dialog"
+        ></Spinner>
+
+    <TextView android:id="@+id/spinnerText_select_03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="请选择年份"
+        android:textSize="18sp"></TextView>
+
+    <Spinner android:id="@+id/Spinner_select_03"
+        android:layout_width="100dp"
+        android:layout_height="64dp"
+        android:entries="@array/year"
+        android:spinnerMode="dialog"
+        ></Spinner>
+
+    <Button
+        android:id="@+id/button_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="查询"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:onClick="chaxun_select"/>
+
+</LinearLayout>

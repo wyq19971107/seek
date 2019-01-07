@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="school">
+        <item>西南财经大学</item>
+        <item>西南交通大学</item>
+        <item>成都大学</item>
+        <item>安徽大学</item>
+        <item>南京理工大学</item>
+    </string-array>
+
+    <string-array name="type">
+        <item>文科</item>
+        <item>理科</item>
+    </string-array>
+
+    <string-array name="year">
+        <item>2017</item>
+        <item>2016</item>
+        <item>2015</item>
+        <item>2014</item>
+        <item>2013</item>
+    </string-array>
+
+    <string-array name="place">
+        <item>北京</item>
+        <item>天津</item>
+        <item>河北</item>
+        <item>河南</item>
+        <item>山东</item>
+        <item>山西</item>
+        <item>陕西</item>
+        <item>内蒙古</item>
+        <item>辽宁</item>
+        <item>吉林</item>
+        <item>黑龙江</item>
+        <item>上海</item>
+        <item>江苏</item>
+        <item>安徽</item>
+        <item>江西</item>
+        <item>湖北</item>
+        <item>湖南</item>
+        <item>重庆</item>
+        <item>四川</item>
+        <item>贵州</item>
+        <item>云南</item>
+        <item>广东</item>
+        <item>广西</item>
+        <item>福建</item>
+        <item>甘肃</item>
+        <item>宁夏</item>
+        <item>新疆</item>
+        <item>西藏</item>
+        <item>海南</item>
+        <item>浙江</item>
+        <item>青海</item>
+    </string-array>
+
+</resources>
