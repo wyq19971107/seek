@@ -4,6 +4,7 @@ import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -22,8 +23,8 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationB
     private BottomNavigationBar bottomNavigationBar;
     int lastSelectedPosition = 0;
      private sichuang_Fragment my_sichuang_Fragment;
-   /*  private FindFragment mFindFragment;
-     private FavoritesFragment mFavoritesFragment;
+     private all_Fragment my_all_Fragment;
+    /* private FavoritesFragment mFavoritesFragment;
      private BookFragment mBookFragment; */
 
 
@@ -39,10 +40,10 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationB
                 .setBarBackgroundColor("#2FA8E1") // 背景颜色
                 .setInActiveColor("#929292") // 未选中状态颜色
                 .setActiveColor("#ffffff") // 选中状态颜色
-                .addItem(new BottomNavigationItem(R.drawable.ic1, "Books"))
-                .addItem(new BottomNavigationItem(R.drawable.ic2, "Music"))
-                .addItem(new BottomNavigationItem(R.drawable.ic3, "Movies & TV"))
-                .addItem(new BottomNavigationItem(R.drawable.ic4, "Games"))
+                .addItem(new BottomNavigationItem(R.mipmap.ic_launcher, "Books"))
+                .addItem(new BottomNavigationItem(R.mipmap.ic_launcher, "Music"))
+                .addItem(new BottomNavigationItem(R.mipmap.ic_launcher, "Movies & TV"))
+                .addItem(new BottomNavigationItem(R.mipmap.ic_launcher, "Games"))
                 .initialise();
 
         bottomNavigationBar.setTabSelectedListener(this);
@@ -89,10 +90,10 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationB
                 transaction.replace(R.id.tb, my_sichuang_Fragment);
                 break;
             case 1:
-               /* if (mFindFragment == null) {
-                    mFindFragment = FindFragment.newInstance("发现");
+                if (my_all_Fragment == null) {
+                    my_all_Fragment = all_Fragment.newInstance("发现");
                 }
-                transaction.replace(R.id.tb, mFindFragment);*/
+                transaction.replace(R.id.tb,my_all_Fragment);
                 break;
             case 2:
               /*  if (mFavoritesFragment == null) {
